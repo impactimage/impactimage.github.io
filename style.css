@@ -1,8 +1,3 @@
-#field {
-	width: 48em;
-	height: 32em;
-}
-
 input[type="color"] {
 	padding: 0;
 	margin: 0;
@@ -10,4 +5,21 @@ input[type="color"] {
 
 	width: 1.5em;
 	height: 1.5em;
+}
+
+.center-container {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.center-x {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#preview {
+	border: 1px solid #000000;
 }
