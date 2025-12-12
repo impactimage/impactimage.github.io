@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html class="center-container">
 	<head>
-		<title>Impact Image Copyer</title>
+		<title>Image Converter for Impact</title>
 
 		<link rel="stylesheet" href="style.css"/>
 	</head>
-	<body>		
-		<textarea id="field" placeholder="Paste your image here..."></textarea><br/>
-		Width: <input id="input-width" type="number" min="1" max="255" value="16"></input> Height: <input id="input-height" type="number" min="1" max="255" value="16"></input><br/>
-		<span id="palette"></span><br/>
-		<button id="button-infer-palette" hidden>Infer palette from pasted image</button> <!-- TODO -->
+	<body class="center-x">
+		<h1>Image Converter for Impact</h1>
+		1. Right-click on the image you want to convert<br/><br/>
+		2. Select "Copy image"<br/><br/>
+		3. Press CTRL+V to paste your image here<br/><br/>
+		<span id="preview" hidden><canvas><tt>&lt;Unable to display preview&gt;</tt></canvas><br/><br/></span>
+		4. Enter the image width: <input id="input-width" type="number" min="1" max="512" value="16"></input> height: <input id="input-height" type="number" min="1" max="512" value="16"></input><br/><br/>
+		5. (Optional) select a palette: <span id="palette"></span><br/><br/>
+		6. Click to copy the converted image: <button id="button-copy">COPY</button><br/><br/>
+		7. In your Impact asset editor, press CTRL+V to paste the converted image<br/><br/>
 
 		<script src="script.js"></script>
 	</body>
